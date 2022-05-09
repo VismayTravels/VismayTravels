@@ -1,0 +1,161 @@
+---
+layout: page
+title: "Big Bend"
+description: "Big Bend National Park"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+album-title: "May 2022"
+images:
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7224.JPEG
+   caption: B.B. 01
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7225.JPEG
+   caption: B.B. 02
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7230.JPEG
+   caption: B.B. 03
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7243.JPEG
+   caption: B.B. 04
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7250.JPEG
+   caption: B.B. 05
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7255.JPEG
+   caption: B.B. 06
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_7285.JPEG
+   caption: B.B. 07
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9621.JPEG
+   caption: B.B. 08
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9622.JPEG
+   caption: B.B. 09
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9644.JPEG
+   caption: B.B. 10
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9660.JPEG
+   caption: B.B. 11
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9664.JPEG
+   caption: B.B. 12
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9665.JPEG
+   caption: B.B. 13
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9669.JPEG
+   caption: B.B. 14
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9672.JPG
+   caption: B.B. 15
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9680.JPEG
+   caption: B.B. 16
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9687.JPEG
+   caption: B.B. 17
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9692.JPEG
+   caption: B.B. 18
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9697.JPEG
+   caption: B.B. 19
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9699.JPEG
+   caption: B.B. 20
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9702.JPEG
+   caption: B.B. 21
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9706.JPEG
+   caption: B.B. 22
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9707.JPEG
+   caption: B.B. 23
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-BigBend/IMG_9711.JPEG
+   caption: B.B. 24
+   copyright: © J.J. Phelan
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
