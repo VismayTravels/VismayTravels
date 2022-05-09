@@ -21,6 +21,4 @@ The intent of the site is to be a location where friends and family can easily v
 
 I wish you two the best of luck! I know you  will remember this trip for the rest of your lives. We all will be waiting to hear the stories in person when you return.
 
-$$
 -Luke
-$$
