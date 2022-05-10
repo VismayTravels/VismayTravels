@@ -9,7 +9,7 @@ date:       2022-05-09
 header-img: "img/postcover/pc001.png"
 tags: [welcome, admin, May2022]
 categories: [luke, friends]
-comments: true
+comments: false
 ---
 
 *This post was written on the inaugural release of the site. 5/9/2022*
