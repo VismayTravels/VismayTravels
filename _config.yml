@@ -2,7 +2,7 @@
 title: J&J Journies
 email: "jjp.adventures.22@gmail.com"
 description: "Photo Journal"
-url: "https://JaneAndJosh.github.io"
+url: "https://janeandjosh.net/"
 baseurl: "/JaneAndJosh"
 facebook_username: ""
 twitter_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://JaneAndJosh.github.io/JaneAndJosh/gallery/"  
-  - JOURNAL: "https://JaneAndJosh.github.io/JaneAndJosh/journal/"
-  - ABOUT: "https://JaneAndJosh.github.io/JaneAndJosh/about/"
+  - GALLERY: "https://janeandjosh.net/JaneAndJosh/gallery/"  
+  - JOURNAL: "https://janeandjosh.net/JaneAndJosh/journal/"
+  - ABOUT: "https://janeandjosh.net/JaneAndJosh/about/"
 
 # All translation keys
 translations:
