@@ -85,7 +85,7 @@ def add_to_existing(img_files):
                     gallery_path = '../gallery/' + folder
                     abbrev = input("\nType the image abbreviation.\n\tFORMAT EXAMPLE: for 'Out West', O.W. \n\t")
                     index = input("\nType the starting index for the images.\n\t")
-                    yaml_insert(abbrev, archive_path, gallery_path, img_files, index)
+                    yaml_insert(abbrev, archive_path[2:], gallery_path, img_files, index)
                     inserted = 1
         if not inserted:
             print("Make a valid selection.")
