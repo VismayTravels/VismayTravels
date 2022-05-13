@@ -92,7 +92,73 @@ def add_to_existing(img_files):
         else:
             break
     return
+
+def add_to_existing2(img_files, tup):
+    # 1. Add images to the correct gallery folder in /img/...
+    # 2. Add the images to the correct gallery folder in /gallery/archive/...
+    archive_path = ''
+    gallery_path = ''
+    while(1):
+        #img_galleries_name = input("\nType the /img/galleries/... folder name.\n\tFORMAT EXAMPLE: '2021-May-Landscapes'\n\t")
+        img_galleries_name = tup[0]
+        inserted = 0
+        directory = '../img/galleries'
+        for root, dirs, files in os.walk(directory):
+            for folder in dirs:
+                if (img_galleries_name == folder):
+                    # Copy images over
+                    archive_path = '../gallery/archive/'+folder
+                    for f in img_files:
+                        shutil.copy('pics_to_add/' + f, '../img/galleries/'+folder)
+                        shutil.copy('pics_to_add/' + f, archive_path)
+                    inserted = 1
+        if not inserted:
+            print("Make a valid selection.")
+        else:
+            break
+
+    # 3. Add the yaml additions to the correct index.html in /gallery/gallery-...
+    while(1):
+        #gallery_name = input("\nType the /gallery/... folder name.\n\tFORMAT EXAMPLE: 'gallery-21May-Landscapes'\n\t")
+        gallery_name = tup[1]
+        inserted = 0
+        directory = '../gallery'
+        for root, dirs, files in os.walk(directory):
+            for folder in dirs:
+                if (gallery_name == folder):
+                    # Make yaml insertion for each file
+                    gallery_path = '../gallery/' + folder
+                    abbrev = input("\nType the image abbreviation.\n\tFORMAT EXAMPLE: for 'Out West', O.W. \n\t")
+                    index = input("\nType the starting index for the images.\n\t")
+                    yaml_insert(abbrev, archive_path[2:], gallery_path, img_files, index)
+                    inserted = 1
+        if not inserted:
+            print("Make a valid selection.")
+        else:
+            break
+    return
             
+
+def create_new():
+    img_galleries_name = input("\nType the /img/galleries/... folder name.\n\tFORMAT EXAMPLE: '2021-May-Landscapes'\n\t")
+    gallery_name = input("\nType the /gallery/... folder name.\n\tFORMAT EXAMPLE: 'gallery-21May-Landscapes'\n\t")
+    
+    # Create the necessary directories
+    print('Making directory: /img/galleries/'+img_galleries_name)
+    os.mkdir('../img/galleries/'+img_galleries_name)
+    
+    print('Making directory: /gallery/archive/'+img_galleries_name)
+    os.mkdir('../gallery/archive/'+img_galleries_name)
+
+    print('Making directory: /gallery/'+gallery_name)
+    os.mkdir('../gallery/'+gallery_name)
+
+    print('Copying an empty index.html into /gallery/'+gallery_name)
+    shutil.copyfile('index.html','../gallery/'+gallery_name+'/index.html')
+        
+    print('\nRemember to modify the index.html file inside of /gallery/'+gallery_name+' with title and header information, and to add an album header image.')
+    return (img_galleries_name, gallery_name)
+
 
 '''
 1. Iterate through the image files in th pics_to_add directory getting all of thier filenames
@@ -109,11 +175,15 @@ if (len(files) == 0):
 
 # Get user input:
 while(1):
-    res = input("If you are creating a new album, you must have created the proper files already...\nThis script only automates yaml generation.\n\t(1) continue\n\t(2) exit\n")
+    res = input("Choose mode of operation:\n\t(1) Add images to existing gallery\n\t(2) Add images to new gallery\n\t(3) Exit\n")
     if res == '1':
         add_to_existing(img_files)
         exit("Success.")
     elif res == '2':
+        tup = create_new()
+        add_to_existing2(img_files,tup)
+        exit("Success.")
+    elif res == '3':
         exit("Bye.")
     else:
         print("Make a valid selection.")
