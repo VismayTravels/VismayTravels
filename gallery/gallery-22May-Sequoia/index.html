@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Sequoia National Park"
+description: ""
+active: gallery
+header-img: "img/background.png"
+album-title: "May 13-14, 2022"
+images:
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9975.JPEG
+   caption: Sequoia 1
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9976.JPEG
+   caption: Sequoia 2
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9978.JPEG
+   caption: Sequoia 3
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9980.JPEG
+   caption: Sequoia 4
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9984.JPEG
+   caption: Sequoia 5
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9985.JPEG
+   caption: Sequoia 6
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9991.JPEG
+   caption: Sequoia 7
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9992.JPEG
+   caption: Sequoia 8
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_9995.JPEG
+   caption: Sequoia 9
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_7492.JPEG
+   caption: Sequoia 10
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_7510.JPEG
+   caption: Sequoia 11
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_7511.JPEG
+   caption: Sequoia 12
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_7514.JPEG
+   caption: Sequoia 13
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_0066.JPEG
+   caption: Sequoia 14
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_0071.JPEG
+   caption: Sequoia 15
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_0072.JPEG
+   caption: Sequoia 16
+   copyright: © J.J. Phelan
+ - image_path: /gallery/archive/2022-May-Sequoia/IMG_0076.JPEG
+   caption: Sequoia 17
+   copyright: © J.J. Phelan
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
