@@ -2,10 +2,10 @@
 title: VismayTravels
 email: "vismay.travels@gmail.com"
 description: "Photo Journal"
-#url: "https://vismaytravels.com/"
-#baseurl: ""
-url: "https://VismayTravels.github.io"
-baseurl: "/VismayTravels"
+url: "https://vismaytravels.com/"
+baseurl: ""
+#url: "https://VismayTravels.github.io"
+#baseurl: "/VismayTravels"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -34,15 +34,15 @@ comments :
     short_name : ""
 
 # Internal nav
-#nav:
-#  - GALLERY: "https://janeandjosh.net/gallery/"  
-#  - JOURNAL: "https://janeandjosh.net/journal/"
-#  - ABOUT: "https://janeandjosh.net/about/"
-# Temporary Until the domain is set up:
 nav:
-  - GALLERY: "https://VismayTravels.github.io/VismayTravels/gallery/"  
-  - JOURNAL: "https://VismayTravels.github.io/VismayTravels/journal/"
-  - ABOUT: "https://VismayTravels.github.io/VismayTravels/about/"
+  - GALLERY: "https://vismaytravels.com/gallery/"  
+  - JOURNAL: "https://vismaytravels.com/journal/"
+  - ABOUT: "https://vismaytravels.com/about/"
+# Temporary Until the domain is set up:
+#nav:
+#  - GALLERY: "https://VismayTravels.github.io/VismayTravels/gallery/"  
+#  - JOURNAL: "https://VismayTravels.github.io/VismayTravels/journal/"
+#  - ABOUT: "https://VismayTravels.github.io/VismayTravels/about/"
 
 # All translation keys
 translations:
