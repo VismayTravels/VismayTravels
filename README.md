@@ -1,4 +1,4 @@
-p h o t o r a m a 
+p h o t o r a m a / VismayTravels
 ====================
 
 ![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif)
