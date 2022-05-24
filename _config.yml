@@ -1,9 +1,11 @@
 # Site settings
-title: J&J Journies
-email: "jjp.adventures.22@gmail.com"
+title: VismayTravels
+email: "vismay.travels@gmail.com"
 description: "Photo Journal"
-url: "https://janeandjosh.net/"
-baseurl: ""
+#url: "https://vismaytravels.com/"
+#baseurl: ""
+url: "https://VismayTravels.github.io"
+baseurl: "/VismayTravels"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -15,10 +17,10 @@ share: true
 
 # Owner/author information
 owner:
-  name:   JaneAndJosh
+  name:   VismayTravels
   avatar: avatar.png
   favicon: favicon.ico
-  info: photography website template
+  info: photography website
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
@@ -32,10 +34,15 @@ comments :
     short_name : ""
 
 # Internal nav
+#nav:
+#  - GALLERY: "https://janeandjosh.net/gallery/"  
+#  - JOURNAL: "https://janeandjosh.net/journal/"
+#  - ABOUT: "https://janeandjosh.net/about/"
+# Temporary Until the domain is set up:
 nav:
-  - GALLERY: "https://janeandjosh.net/gallery/"  
-  - JOURNAL: "https://janeandjosh.net/journal/"
-  - ABOUT: "https://janeandjosh.net/about/"
+  - GALLERY: "https://VismayTravels.github.io/VismayTravels/gallery/"  
+  - JOURNAL: "https://VismayTravels.github.io/VismayTravels/journal/"
+  - ABOUT: "https://VismayTravels.github.io/VismayTravels/about/"
 
 # All translation keys
 translations:
