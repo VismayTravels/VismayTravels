@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: rgb(18, 105, 199);
+  color: rgb(44, 68, 141);
   background-color: rgb(255, 255, 255);
 }
 p {
@@ -21,7 +21,7 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: rgb(18, 105, 199);
+  color: rgb(44, 68, 141);
   transition: color .4s;
   text-decorarion: none;
 }
