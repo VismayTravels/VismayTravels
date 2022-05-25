@@ -5,7 +5,7 @@ subtitle:   "Luke Rouleau"
 active: journal
 image:
   feature: "pc001.jpg"
-date:       2022-05-09
+date:       2022-05-25
 header-img: "img/postcover/pc001.jpg"
 tags: [welcome, admin, May2022]
 categories: [luke, friends]
