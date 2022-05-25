@@ -11,7 +11,7 @@ import codecs
 Insert yaml lines of this format for each image:
  - image_path: /gallery/archive/2021-May-OutWest/IMG_6308.JPEG
    caption: O.W. 01
-   copyright: © J.J. Phelan
+   copyright: © Vismay Patel
 '''                    
 def yaml_insert(abbr, archive_path, gallery_path, files, index):
     # find the second instance of '---' in the file
@@ -31,7 +31,7 @@ def yaml_insert(abbr, archive_path, gallery_path, files, index):
                 for j,element in enumerate(files):
                     lineArr.insert(pos,  " - image_path: " + archive_path + "/" + element)
                     lineArr.insert(pos+1,"   caption: " + abbr + " " + str(j + int(index)))
-                    lineArr.insert(pos+2,"   copyright: © J.J. Phelan")
+                    lineArr.insert(pos+2,"   copyright: © Vismay Patel")
                     pos += 3
                 break
         fin.close()

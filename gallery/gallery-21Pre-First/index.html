@@ -1,0 +1,188 @@
+---
+layout: page
+title: "The First Album"
+description: "Misc Locations"
+active: gallery
+header-img: "img/background-min.png"
+album-title: "Prior to May 2022"
+images:
+ - image_path: /gallery/archive/2021-Pre-First/IMG_0332-min.webp
+   caption: Intro 1
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_0568-min.JPG
+   caption: Intro 2
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_0899-min.jpg
+   caption: Intro 3
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_20170106_222627-min.jpg
+   caption: Intro 4
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_3052-min.jpg
+   caption: Intro 5
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_3150-min.jpg
+   caption: Intro 6
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_3202-min.jpg
+   caption: Intro 7
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_4140-min.webp
+   caption: Intro 8
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_4481-min.jpg
+   caption: Intro 9
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_5958-min.webp
+   caption: Intro 10
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_5991-min.webp
+   caption: Intro 11
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7507-min.webp
+   caption: Intro 12
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7551-min.webp
+   caption: Intro 13
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7754-min.webp
+   caption: Intro 14
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7776-min.webp
+   caption: Intro 15
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7794-min.JPG
+   caption: Intro 16
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7804-min.JPG
+   caption: Intro 17
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7809-min.webp
+   caption: Intro 18
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7818-min.webp
+   caption: Intro 19
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7837-min.JPG
+   caption: Intro 20
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7839-min.JPG
+   caption: Intro 21
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7845-min.webp
+   caption: Intro 22
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7848-min.webp
+   caption: Intro 23
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7875-min.webp
+   caption: Intro 24
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7887-min.webp
+   caption: Intro 25
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7890-min.webp
+   caption: Intro 26
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7897-min.JPG
+   caption: Intro 27
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7903-min.webp
+   caption: Intro 28
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7938-min.webp
+   caption: Intro 29
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_7949-min.webp
+   caption: Intro 30
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_8028-min.webp
+   caption: Intro 31
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_8031-min.webp
+   caption: Intro 32
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2021-Pre-First/IMG_8035-min.webp
+   caption: Intro 33
+   copyright: © Vismay Patel
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
