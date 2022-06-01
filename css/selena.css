@@ -38,13 +38,15 @@ figure.effect-selena p {
 	transform-origin: 50% 0%;
 }
 
-figure.effect-selena h2 {
+/*
+figure.effect-selena:hover h2 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-selena p {
+figure.effect-selena:hover p {
 	opacity: 1;
 	-webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
 	transform: perspective(1000px) rotate3d(1,0,0,0);
 }
+*/
