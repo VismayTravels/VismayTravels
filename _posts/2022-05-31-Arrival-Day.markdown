@@ -18,6 +18,8 @@ comments: false
 
 ## 12:19 PM
 
+![Before the plane picture](../gallery/archive/2022-May-Milan/photo1653953989.jpeg "Before the plane")
+
 I landed at around 11 at MXP. One of my first surprises (besides some earlier ones regarding supplies, but nothing major), was that my airport is over 30 miles away from my hostel and Milan city center. This was the cheapest option by far, so it was still the best option. As I landed, I thought I looked to Uber as the first transport that came to mind, and saw it would be around €100. I was disappointed, but thought to myself I’d still come out ahead compared to other ticket prices. Thankfully my ignorance to other forms of travel was saved by big signs advertising €10 bus rides to the city. I think one of the main things I need to get comfortable with is figuring out transportation on the ground, talking to people rather than just trying to book a route online. I think I’m impeding myself from certain routes due to reliance on knowing my transportation, but that’s something I need to get over. The bus ride is about 1 hour to Milan Central Station, from where I will walk a couple of miles to my hostel for the night, Meininger Milano Lambrate. 
 
 ## 4:30 PM

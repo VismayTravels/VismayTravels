@@ -1,0 +1,149 @@
+---
+layout: page
+title: "Milan"
+description: "Lombardy, Italy"
+active: gallery
+header-img: "img/background-min.png"
+album-title: "May 31, 2022"
+images:
+ - image_path: /gallery/archive/2022-May-Milan/photo1653953989.jpeg
+   caption: Milan 1
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422124.jpg
+   caption: Milan 2
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422125.jpg
+   caption: Milan 3
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422126.jpg
+   caption: Milan 4
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422127.jpg
+   caption: Milan 5
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422128.jpg
+   caption: Milan 6
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422129.jpg
+   caption: Milan 7
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422130.jpg
+   caption: Milan 8
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422131.jpg
+   caption: Milan 9
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422132.jpg
+   caption: Milan 10
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422133.jpg
+   caption: Milan 11
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422134.jpg
+   caption: Milan 12
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422135.jpg
+   caption: Milan 13
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422136.jpg
+   caption: Milan 14
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422137.jpg
+   caption: Milan 15
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422138.jpg
+   caption: Milan 16
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422139.jpg
+   caption: Milan 17
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422140.jpg
+   caption: Milan 18
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422141.jpg
+   caption: Milan 19
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-May-Milan/msg38503476-422123.jpg 
+   caption: Milan 20
+   copyright: © Vismay Patel
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
