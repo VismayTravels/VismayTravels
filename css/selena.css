@@ -34,11 +34,10 @@ figure.effect-selena p {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
 	transform: perspective(1000px) rotate3d(1,0,0,90deg);
-	-webkit-transform-origin: 50% 0%;
-	transform-origin: 50% 0%;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
 }
 
-/*
 figure.effect-selena:hover h2 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -49,4 +48,3 @@ figure.effect-selena:hover p {
 	-webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
 	transform: perspective(1000px) rotate3d(1,0,0,0);
 }
-*/
