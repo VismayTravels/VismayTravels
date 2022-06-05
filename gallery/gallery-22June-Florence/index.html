@@ -1,0 +1,173 @@
+---
+layout: page
+title: "REPLACE HERE"
+description: "REPLACE HERE"
+active: gallery
+header-img: "img/background-min.png"
+album-title: "REPLACE HERE"
+images:
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422310.jpg
+   caption: Florence 1
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422311.jpg
+   caption: Florence 2
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422312.jpg
+   caption: Florence 3
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422314.jpg
+   caption: Florence 4
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422315.jpg
+   caption: Florence 5
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422316.jpg
+   caption: Florence 6
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422317.jpg
+   caption: Florence 7
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422318.jpg
+   caption: Florence 8
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422319.jpg
+   caption: Florence 9
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422320.jpg
+   caption: Florence 10
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422321.jpg
+   caption: Florence 11
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422322.jpg
+   caption: Florence 12
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422323.jpg
+   caption: Florence 13
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422324.jpg
+   caption: Florence 14
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422325.jpg
+   caption: Florence 15
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422326.jpg
+   caption: Florence 16
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422327.jpg
+   caption: Florence 17
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422328.jpg
+   caption: Florence 18
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422329.jpg
+   caption: Florence 19
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422330.jpg
+   caption: Florence 20
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422331.jpg
+   caption: Florence 21
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422332.jpg
+   caption: Florence 22
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422333.jpg
+   caption: Florence 23
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422334.jpg
+   caption: Florence 24
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422335.jpg
+   caption: Florence 25
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422336.jpg
+   caption: Florence 26
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422337.jpg
+   caption: Florence 27
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Florence/msg38503476-422371.jpg
+   caption: Florence 28
+   copyright: © Vismay Patel
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
