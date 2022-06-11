@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Siena"
+description: "Tuscany, Italy"
+active: gallery
+header-img: "img/background-min.png"
+album-title: "June 8-11, 2022"
+images:
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422539.jpg
+   caption: Siena 1
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422540.jpg
+   caption: Siena 2
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422541.jpg
+   caption: Siena 3
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422542.jpg
+   caption: Siena 4
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422543.jpg
+   caption: Siena 5
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422544.jpg
+   caption: Siena 6
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422545.jpg
+   caption: Siena 7
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422546.jpg
+   caption: Siena 8
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422547.jpg
+   caption: Siena 9
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422548.jpg
+   caption: Siena 10
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422562.jpg
+   caption: Siena 11
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422563.jpg
+   caption: Siena 12
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422564.jpg
+   caption: Siena 13
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422565.jpg
+   caption: Siena 14
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422566.jpg
+   caption: Siena 15
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422567.jpg
+   caption: Siena 16
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422568.jpg
+   caption: Siena 17
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422569.jpg
+   caption: Siena 18
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422570.jpg
+   caption: Siena 19
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422571.jpg
+   caption: Siena 20
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422572.jpg
+   caption: Siena 21
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422573.jpg
+   caption: Siena 22
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422574.jpg
+   caption: Siena 23
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422575.jpg
+   caption: Siena 24
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-June-Siena/msg38503476-422576.jpg
+   caption: Siena 25
+   copyright: © Vismay Patel
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
