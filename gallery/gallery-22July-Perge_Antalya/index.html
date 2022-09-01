@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Perge and Antalya"
+description: "Turkey"
+active: gallery
+header-img: "img/background-min.png"
+album-title: "July 18th, 2022"
+images:
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424807.jpg
+   caption: Perge-Antalya 1
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424808.jpg
+   caption: Perge-Antalya 2
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424809.jpg
+   caption: Perge-Antalya 3
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424810.jpg
+   caption: Perge-Antalya 4
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424811.jpg
+   caption: Perge-Antalya 5
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424812.jpg
+   caption: Perge-Antalya 6
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424813.jpg
+   caption: Perge-Antalya 7
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424814.jpg
+   caption: Perge-Antalya 8
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424815.jpg
+   caption: Perge-Antalya 9
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424816.jpg
+   caption: Perge-Antalya 10
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424817.jpg
+   caption: Perge-Antalya 11
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424818.jpg
+   caption: Perge-Antalya 12
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424819.jpg
+   caption: Perge-Antalya 13
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424820.jpg
+   caption: Perge-Antalya 14
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424821.jpg
+   caption: Perge-Antalya 15
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424822.jpg
+   caption: Perge-Antalya 16
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424823.jpg
+   caption: Perge-Antalya 17
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Perge_Antalya/msg38503476-424824.jpg
+   caption: Perge-Antalya 18
+   copyright: © Vismay Patel
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>

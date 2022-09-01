@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Izmir and Pamukkale"
+description: "Turkey"
+active: gallery
+header-img: "img/background-min.png"
+album-title: "July 17, 2022"
+images:
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424787.jpg
+   caption: Izmir-Pamukkale 1
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424788.jpg
+   caption: Izmir-Pamukkale 2
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424789.jpg
+   caption: Izmir-Pamukkale 3
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424790.jpg
+   caption: Izmir-Pamukkale 4
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424791.jpg
+   caption: Izmir-Pamukkale 5
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424792.jpg
+   caption: Izmir-Pamukkale 6
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424793.jpg
+   caption: Izmir-Pamukkale 7
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424794.jpg
+   caption: Izmir-Pamukkale 8
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424795.jpg
+   caption: Izmir-Pamukkale 9
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424796.jpg
+   caption: Izmir-Pamukkale 10
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424797.jpg
+   caption: Izmir-Pamukkale 11
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424798.jpg
+   caption: Izmir-Pamukkale 12
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424799.jpg
+   caption: Izmir-Pamukkale 13
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424800.jpg
+   caption: Izmir-Pamukkale 14
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424801.jpg
+   caption: Izmir-Pamukkale 15
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424802.jpg
+   caption: Izmir-Pamukkale 16
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424803.jpg
+   caption: Izmir-Pamukkale 17
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424804.jpg
+   caption: Izmir-Pamukkale 18
+   copyright: © Vismay Patel
+ - image_path: /gallery/archive/2022-July-Izmir_Pamukkale/msg38503476-424805.jpg
+   caption: Izmir-Pamukkale 19
+   copyright: © Vismay Patel
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
